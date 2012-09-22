@@ -1,10 +1,6 @@
-/*
 ---
 name: How Many Squares Do You See?
 description: As just answering without explaining seemed a bit lame I decided I'd rather document my answer.
-
 authors:
   - Potherca
-*/
 
-<p>This demo will show you how to: add multiple Events to an Element, create custom Events and fire an Event.</p> 
