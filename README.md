@@ -12,7 +12,7 @@ and banged a simple [Canvas][1] animation together.
 
 Depending on your browser [YMMV][2]
 
-[how_many_squares_img]: https://github.com/potherca/HowManySquaresDoYouSeePuzzle/raw/master/how-many-squares.png  "How Many Squares Do You See?"
+[how_many_squares_img]: https://raw.github.com/potherca/HowManySquaresDoYouSeePuzzle/gh-pages/how-many-squares.png  "How Many Squares Do You See?"
 [1]: http://diveintohtml5.info/canvas.html
 [2]: http://en.wiktionary.org/wiki/your_mileage_may_vary
 
