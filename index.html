@@ -12,32 +12,12 @@
     <link href="ribbon.css"  rel='stylesheet' type='text/css' />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script>
-        /**
-         * source: http://stackoverflow.com/a/3058974/153049
-         */
-        function decode_base64(s) {
-            var e={},i,k,v=[],r='',w=String.fromCharCode;
-            var n=[[65,91],[97,123],[48,58],[43,44],[47,48]];
-
-            for(z in n){for(i=n[z][0];i<n[z][1];i++){v.push(w(i));}}
-            for(i=0;i<64;i++){e[v[i]]=i;}
-
-            for(i=0;i<s.length;i+=72){
-            var b=0,c,x,l=0,o=s.substring(i,i+72);
-                 for(x=0;x<o.length;x++){
-                        c=e[o.charAt(x)];b=(b<<6)+c;l+=6;
-                        while(l>=8){r+=w((b>>>(l-=8))&0xff);}
-                 }
-            }
-            return r;
-        }
-    </script>
 </head>
 <body>
     <form action="http://fiddle.jshell.net/_display/" method="post" target="jsfiddle-frame" id="fiddle-form"></form>
     <iframe 
-        src="http://jsfiddle.net/gh/get/jquery/1/potherca/HowManySquaresDoYouSeePuzzle/tree/master/" 
+        %src="http://jsfiddle.net/gh/get/jquery/1/potherca/HowManySquaresDoYouSeePuzzle/tree/gh-pages/" 
+        src="" 
         width="100%" 
         height="100%"
         scrolling="no"
@@ -51,55 +31,119 @@
     </iframe>
 
 	<div class="banner banner-left banner-jsfiddle"><a 
-	    href="http://jsfiddle.net/gh/get/jquery/1/potherca/HowManySquaresDoYouSeePuzzle/tree/master/"
+	    href="http://jsfiddle.net/gh/get/jquery/1/potherca/HowManySquaresDoYouSeePuzzle/tree/gh-pages/"
     >Edit me on JsFiddle</a></div>
 	
 	<div class="banner banner-right"><a 
 	    href="https://github.com/potherca/HowManySquaresDoYouSeePuzzle"
     >Fork me on GitHub</a></div>
     
-    <script>
-    var oData = {
-         //"username":"potherca"
-         "js_wrap":"h"
-        ,"js_lib":"11"
-        ,"js_lib_option":""
-        ,"normalize_css":"on"
-        ,"panel_css":"0"
-        ,"panel_js":"0"
-        ,"add_external_resources":""
-        ,"title":"How Many Squares Do You See?"
-        ,"description":"As just answering without explaining seemed a bit lame I decided I'd rather document my answer."
-        ,"author(s)":"Potherca"
-        ,"body_tag":"<body>"
-        ,"doctype":3
-        ,"version":""
-        ,"slug":""
-        ,"code_html":"PGNhbnZhcyBpZD0idmljdGltIiB3aWR0aD0iNDI0IiBoZWlnaHQ9IjQwOCI+PC9jYW52YXM+CjxidXR0b24gaWQ9ImN1bHByaXQiPkdvITwvYnV0dG9uPgoK"        
-        ,"code_js":"dmFyIFZhbmlsbGFSdW5PbkRvbVJlYWR5ID0gZnVuY3Rpb24oKSB7CgogICAgdmFyIGFHcmlkLCBhU3F1YXJlcywgaURlbGF5LCBpRGVsYXlJbmNyZW1lbnQsIGlDb3VudGVyOwoKICAgIGFHcmlkID0gWwogICAgICAgICB7eDogMDAyLCB5OjAwMn0se3g6IDEwMiwgeTowMDJ9LHt4OiAyMDIsIHk6MDAyfSx7eDogMzAyLCB5OjAwMn0KICAgICAgICAKICAgICAgICAse3g6IDAwMiwgeToxMDJ9LHt4OiAxMDIsIHk6MTAyfSx7eDogMjAyLCB5OjEwMn0se3g6IDMwMiwgeToxMDJ9CiAgICAgICAgCiAgICAgICAgLHt4OiAwMDIsIHk6MjAyfSx7eDogMTAyLCB5OjIwMn0se3g6IDIwMiwgeToyMDJ9LHt4OiAzMDIsIHk6MjAyfQogICAgICAgIAogICAgICAgICx7eDogMDAyLCB5OjMwMn0se3g6IDEwMiwgeTozMDJ9LHt4OiAyMDIsIHk6MzAyfSx7eDogMzAyLCB5OjMwMn0KCiAgICAgICAgLHt4OiAxNTIsIHk6MDY0fSx7eDogMTUyLCB5OjI1Mn0KICAgIF07CgogICAgYVNxdWFyZXMgPSBbCiAgICAgICAgIHt4OiAwMDIsIHk6MDAyLHo6NDAwfQogICAgICAgIAogICAgICAgICx7eDogMDAyLCB5OjAwMix6OjIwMH0se3g6IDEwMiwgeTowMDIsejoyMDB9LHt4OiAyMDIsIHk6MDAyLHo6MjAwfQogICAgICAgICx7eDogMDAyLCB5OjEwMix6OjIwMH0se3g6IDEwMiwgeToxMDIsejoyMDB9LHt4OiAyMDIsIHk6MTAyLHo6MjAwfQogICAgICAgICx7eDogMDAyLCB5OjIwMix6OjIwMH0se3g6IDEwMiwgeToyMDIsejoyMDB9LHt4OiAyMDIsIHk6MjAyLHo6MjAwfQogICAgICAgIAogICAgICAgICx7eDogMTUyLCB5OjA2NCwgejo1MH0se3g6IDIwMiwgeTowNjQsIHo6NTB9LHt4OiAxNTIsIHk6MTAyLCB6OjUwfSx7eDogMjAyLCB5OjEwMiwgejo1MH0KICAgICAgICAse3g6IDE1MiwgeToyNTIsIHo6NTB9LHt4OiAyMDIsIHk6MjUyLCB6OjUwfSx7eDogMTUyLCB5OjMwMiwgejo1MH0se3g6IDIwMiwgeTozMDIsIHo6NTB9CgogICAgICAgICAse3g6IDAwMiwgeTowMDIsejozMDB9LHt4OiAxMDIsIHk6MDAyLHo6MzAwfSx7eDogMDAyLCB5OjEwMix6OjMwMH0se3g6IDEwMiwgeToxMDIsejozMDB9CgogICAgXTsKCiAgICBmdW5jdGlvbiBnZXRDb250ZXh0KCkgewogICAgICAgIHZhciBvQ2FudmFzLCBvQ29udGV4dDsKICAgICAgICAKICAgICAgICBvQ2FudmFzID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3ZpY3RpbScpOwogICAgICAgIGlmIChvQ2FudmFzLmdldENvbnRleHQpIHsKICAgICAgICAgIG9Db250ZXh0ID0gb0NhbnZhcy5nZXRDb250ZXh0KCcyZCcpOwogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICBhbGVydCgnU29ycnksIHlvdXIgYnJvd3NlciBkb2VzIG5vdCBzdXBwb3J0IHRoZSB0ZWNobm9sb2d5IG5lZWRlZCB0byBkaXNwbGF5IHRoaXMgcGFnZS4nKTsKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgcmV0dXJuIG9Db250ZXh0CiAgICB9OwoKICAgIGZ1bmN0aW9uIGRyYXdTcXVhcmUocF9vQ29udGV4dCwgcF9vU3F1YXJlLCBwX3NDb2xvcikgewogICAgICAgIHBfb0NvbnRleHQuc3Ryb2tlU3R5bGUgPSBwX3NDb2xvciB8fCAnYmxhY2snOwogICAgICAgIHBfb0NvbnRleHQuc3Ryb2tlUmVjdChwX29TcXVhcmUueCwgcF9vU3F1YXJlLnksIHBfb1NxdWFyZS56IHx8IDEwMCwgcF9vU3F1YXJlLnogfHwgMTAwKTsKICAgIH0KCiAgICBmdW5jdGlvbiBkcmF3R3JpZChwX29Db250ZXh0LCBwX2FHcmlkKSB7CiAgICAgICAgdmFyIGlMZW5ndGg7CgogICAgICAgIGlMZW5ndGggPSBwX2FHcmlkLmxlbmd0aC0xOwogICAgICAgIGZvcig7aUxlbmd0aCA+IC0xOyBpTGVuZ3RoLS0pIHsKICAgICAgICAgICAgZHJhd1NxdWFyZShwX29Db250ZXh0LCBwX2FHcmlkW2lMZW5ndGhdKTsKICAgICAgICB9CiAgICB9OwogICAgICAgICAgICAKICAgIGZ1bmN0aW9uIGRyYXdDb3VudGVyKHBfb0NvbnRleHQsIHBfaUNvdW50ZXIsIHBfc0NvbG9yKSB7CiAgICAgICAgcF9vQ29udGV4dC5mb250ID0gImJvbGQgMTZweCBBcmlhbCI7CgogICAgICAgIC8vIFJ1YiBvdXQgcHJldmlvdXMgY291bnRlcgogICAgICAgIHBfb0NvbnRleHQuZmlsbFN0eWxlID0gJ3doaXRlJzsKICAgICAgICBwX29Db250ZXh0LmZpbGxSZWN0KDQwNCwgNDAwLTE2LCAyNCwgMjQpOwoKICAgICAgICBwX29Db250ZXh0LmZpbGxTdHlsZSA9IHBfc0NvbG9yIHx8ICdibGFjayc7CiAgICAgICAgcF9vQ29udGV4dC5maWxsVGV4dChwX2lDb3VudGVyLCA0MDQsIDQwMCk7ICAgICAgICAKICAgIH0gICAgCgogICAgZnVuY3Rpb24gZHJhd1NxdWFyZXMocF9vQ29udGV4dCwgcF9hU3F1YXJlcykgeyAKICAgICAgICB2YXIgaUxlbmd0aCwgaTsKCiAgICAgICAgaUxlbmd0aCA9IHBfYVNxdWFyZXMubGVuZ3RoLTE7CiAgICAgICAgZm9yKGk9MDtpIDw9IGlMZW5ndGg7IGkrKykgewogICAgICAgICAgICBpQ291bnRlcisrOwogICAgICAgICAgICBpRGVsYXkgPSBpRGVsYXkgKyBpRGVsYXlJbmNyZW1lbnQgfHwgMDsKICAgICAgICAgICAgd2luZG93LnNldFRpbWVvdXQoZHJhd1NxdWFyZSwgaURlbGF5LCBwX29Db250ZXh0LCBwX2FTcXVhcmVzW2ldLCAncmVkJyk7ICAgICAgICAKICAgICAgICAgICAgd2luZG93LnNldFRpbWVvdXQoZHJhd0NvdW50ZXIsIGlEZWxheSwgcF9vQ29udGV4dCwgaUNvdW50ZXIsICdyZWQnKTsgICAgICAgIAogICAgICAgICAgICB3aW5kb3cuc2V0VGltZW91dChkcmF3R3JpZCwgaURlbGF5ICsgMzAwLCBwX29Db250ZXh0LCBhR3JpZCk7ICAgICAgICAKICAgICAgICAgICAgLy8gZHJhd1NxdWFyZShwX29Db250ZXh0LCBwX2FTcXVhcmVzW2lMZW5ndGhdLCAncmVkJyk7CiAgICAgICAgfSAgICAKICAgIH0KCiAgICBmdW5jdGlvbiBydW4oKSB7CiAgICAgICAgaUNvdW50ZXI9MDsgICAgCiAgICAgICAgaURlbGF5ID0gMDsgICAgCiAgICAgICAgZHJhd1NxdWFyZXMob0NvbnRleHQsIGFHcmlkKTsKICAgICAgICBkcmF3U3F1YXJlcyhvQ29udGV4dCwgYVNxdWFyZXMpOwogICAgfSAgICAKCiAgICB2YXIgb0NvbnRleHQgPSBnZXRDb250ZXh0KCk7CiAgICBvQ29udGV4dC5saW5lV2lkdGggPSA0OwogICAgZHJhd0dyaWQob0NvbnRleHQsIGFHcmlkKTsgCiAgICBpRGVsYXlJbmNyZW1lbnQgPSA1MDA7CiAgICAgICAgCiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY3VscHJpdCcpLm9uY2xpY2sgPSBydW47Cgp9Cgp2YXIgYWxyZWFkeXJ1bmZsYWcgPSAwOwoKaWYgKGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIpCiAgICBkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCJET01Db250ZW50TG9hZGVkIiwgZnVuY3Rpb24oKXsKICAgICAgICBhbHJlYWR5cnVuZmxhZz0xOyAKICAgICAgICBWYW5pbGxhUnVuT25Eb21SZWFkeSgpOwogICAgfSwgZmFsc2UpOwplbHNlIGlmIChkb2N1bWVudC5hbGwgJiYgIXdpbmRvdy5vcGVyYSkgewogICAgZG9jdW1lbnQud3JpdGUoJzxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBpZD0iY29udGVudGxvYWR0YWciIGRlZmVyPSJkZWZlciIgc3JjPSJqYXZhc2NyaXB0OnZvaWQoMCkiPjxcL3NjcmlwdD4nKTsKICAgIHZhciBjb250ZW50bG9hZHRhZyA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjb250ZW50bG9hZHRhZyIpCiAgICBjb250ZW50bG9hZHRhZy5vbnJlYWR5c3RhdGVjaGFuZ2U9ZnVuY3Rpb24oKXsKICAgICAgICBpZiAodGhpcy5yZWFkeVN0YXRlPT0iY29tcGxldGUiKXsKICAgICAgICAgICAgYWxyZWFkeXJ1bmZsYWc9MTsKICAgICAgICAgICAgVmFuaWxsYVJ1bk9uRG9tUmVhZHkoKTsKICAgICAgICB9CiAgICB9Cn0KCndpbmRvdy5vbmxvYWQgPSBmdW5jdGlvbigpewogIHNldFRpbWVvdXQoImlmICghYWxyZWFkeXJ1bmZsYWcpe1ZhbmlsbGFSdW5PbkRvbVJlYWR5fSIsIDApOwp9CgovL0VPRgo="
-        ,"code_css":""    
-    }
-
-
-    $('[name="jsfiddle-frame"]').load(function(){
-        console.log($('[name="jsfiddle-frame"]').contents().find(".html"));
-    });
-
-    var sText = $('[name="jsfiddle-frame"]').contents().find(".html").text();
-console.log(sText);
-    //.contents().find("");
-    
-    var sContent='';
-    $.each(oData, function(p_sName,p_sValue){
-       sContent = sContent + '<input type="hidden" name="' + p_sName + '" value="' + p_sValue + '" />';
-    });
-    //$('#fiddle-form').append(sContent).submit();    
-    
-    /*
-        - get content from ? (iframe?github?wut?)
-        X post to http://fiddle.jshell.net/_display/
+    <script type="text/javascript">
+        /**
+         * source: http://www.webtoolkit.info/javascript-base64.html
+         */
+        function base64Encode (input) {
+            function utf8_encode (string) {
+		        string = string.replace(/\r\n/g,"\n");
+		        var utftext = "";
+         
+		        for (var n = 0; n < string.length; n++) {
+         
+			        var c = string.charCodeAt(n);
+         
+			        if (c < 128) {
+				        utftext += String.fromCharCode(c);
+			        }
+			        else if((c > 127) && (c < 2048)) {
+				        utftext += String.fromCharCode((c >> 6) | 192);
+				        utftext += String.fromCharCode((c & 63) | 128);
+			        }
+			        else {
+				        utftext += String.fromCharCode((c >> 12) | 224);
+				        utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+				        utftext += String.fromCharCode((c & 63) | 128);
+			        }
+         
+		        }
+         
+		        return utftext;
+	        };
         
-    */
+            var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+            var output = "";
+            var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+            var i = 0;
+
+            input = utf8_encode(input);
+
+            while (i < input.length) {
+
+                chr1 = input.charCodeAt(i++);
+                chr2 = input.charCodeAt(i++);
+                chr3 = input.charCodeAt(i++);
+
+                enc1 = chr1 >> 2;
+                enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+                enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+                enc4 = chr3 & 63;
+
+                if (isNaN(chr2)) {
+                    enc3 = enc4 = 64;
+                } else if (isNaN(chr3)) {
+                    enc4 = 64;
+                }
+
+                output = output +
+                keyStr.charAt(enc1) + keyStr.charAt(enc2) +
+                keyStr.charAt(enc3) + keyStr.charAt(enc4);
+
+            }
+
+            return output;
+        };
+
+        var oData = {
+            // @TODO: Read the values below from the demo.details files.
+             "js_wrap":"h"
+            ,"js_lib":"11"
+            ,"js_lib_option":""
+            ,"normalize_css":"on"
+            ,"panel_css":"0"
+            ,"panel_js":"0"
+            ,"add_external_resources":""
+            ,"title":"How Many Squares Do You See?"
+            ,"description":"As just answering without explaining seemed a bit lame I decided I'd rather document my answer."
+            ,"author(s)":"Potherca"
+            ,"body_tag":"<body>"
+            ,"doctype":3
+            ,"version":""
+            ,"slug":""
+            //,"code_html" : '--AJAX FROM ./demo.html --'
+            //,"code_js"   : '--AJAX FROM ./js.html --'
+            //,"code_css"  : '--AJAX FROM ./css.html --'
+        }
+
+
+        var sContent='';
+
+        $.each(['js','css','html'], function(p_i, p_sName){
+            $.get('fiddle/demo.' + p_sName, function(p_sResponseData) {
+                sContent = sContent + '<input type="hidden" name="code_' + p_sName + '" value="' + base64Encode(p_sResponseData) + '" />';
+                
+                if(p_i === 2){                
+                    $.each(oData, function(p_sName,p_sValue){
+                        sContent = sContent + '<input type="hidden" name="' + p_sName + '" value="' + p_sValue + '" />';
+                    });
+
+                    $('#fiddle-form').append(sContent).submit();    
+                }
+                console.log(p_i);
+                console.log(p_sResponseData);
+                console.log(base64Encode(p_sResponseData));
+            });
+        });    
+    
     </script>
 </body>
 </html>
