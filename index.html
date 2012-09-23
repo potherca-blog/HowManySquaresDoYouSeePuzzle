@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+
+    <title>JsFiddle Result Server from Github</title>
     
-    <title>How many squares do you see?</title>
 
     <link href="general.css" rel='stylesheet' type='text/css' />
     <link href="ribbon.css"  rel='stylesheet' type='text/css' />
@@ -16,22 +17,14 @@
 <body>
     <form action="http://fiddle.jshell.net/_display/" method="post" target="jsfiddle-frame" id="fiddle-form"></form>
     <iframe 
-        %src="http://jsfiddle.net/gh/get/jquery/1/potherca/HowManySquaresDoYouSeePuzzle/tree/gh-pages/" 
-        src="" 
-        width="100%" 
-        height="100%"
-        scrolling="no"
-        frameborder="0"
-        marginwidth="0"
-        marginheight="0"
-        hspace="0"
-        vspace="0"
-        name="jsfiddle-frame"
+        name="jsfiddle-frame" src="" 
+        width="100%" height="100%" scrolling="no" frameborder="0"
+        marginwidth="0" marginheight="0" hspace="0" vspace="0"
     >
     </iframe>
 
 	<div class="banner banner-left banner-jsfiddle"><a 
-	    href="http://jsfiddle.net/gh/get/jquery/1/potherca/HowManySquaresDoYouSeePuzzle/tree/gh-pages/"
+	    href="http://jsfiddle.net/gh/get/jquery/1/potherca/HowManySquaresDoYouSeePuzzle/tree/gh-pages/fiddle/"
     >Edit me on JsFiddle</a></div>
 	
 	<div class="banner banner-right"><a 
@@ -106,7 +99,7 @@
         var oData = {
             // @TODO: Read the values below from the demo.details files.
              "js_wrap":"h"
-            ,"js_lib":"11"
+            ,"js_lib":"11"  // No library/vannilla JS
             ,"js_lib_option":""
             ,"normalize_css":"on"
             ,"panel_css":"0"
@@ -119,13 +112,12 @@
             ,"doctype":3
             ,"version":""
             ,"slug":""
-            //,"code_html" : '--AJAX FROM ./demo.html --'
-            //,"code_js"   : '--AJAX FROM ./js.html --'
-            //,"code_css"  : '--AJAX FROM ./css.html --'
         }
 
 
         var sContent='';
+
+        document.title = oData.title;
 
         $.each(['js','css','html'], function(p_i, p_sName){
             $.get('fiddle/demo.' + p_sName, function(p_sResponseData) {
@@ -138,9 +130,6 @@
 
                     $('#fiddle-form').append(sContent).submit();    
                 }
-                console.log(p_i);
-                console.log(p_sResponseData);
-                console.log(base64Encode(p_sResponseData));
             });
         });    
     
