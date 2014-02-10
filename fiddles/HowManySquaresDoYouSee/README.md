@@ -24,7 +24,7 @@ both the code on JsFiddle (so they can play with it online) and the git repo (so
 
 I hope you like it.
 
-[how_many_squares_img]: https://raw.github.com/potherca/HowManySquaresDoYouSeePuzzle/gh-pages/how-many-squares.png  "How Many Squares Do You See?"
+[how_many_squares_img]: how-many-squares.png  "How Many Squares Do You See?"
 [1]: http://diveintohtml5.info/canvas.html
 [2]: http://en.wiktionary.org/wiki/your_mileage_may_vary
 [3]: http://doc.jsfiddle.net/use/github_read.html
