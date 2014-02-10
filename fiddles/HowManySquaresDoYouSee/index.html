@@ -9,8 +9,8 @@
     <title>JsFiddle Result Served from Github</title>
     
 
-    <link href="general.css" rel='stylesheet' type='text/css' />
-    <link href="http://pother.ca/CssBase/css/ribbon.css"  rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="../../general.css" />
+    <link rel="stylesheet" href="http://pother.ca/CssBase/css/ribbon.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
@@ -24,7 +24,7 @@
     </iframe>
 
 	<div class="banner banner-left banner-jsfiddle"><a 
-	    href="http://jsfiddle.net/gh/get/library/pure/potherca/HowManySquaresDoYouSeePuzzle/tree/fiddle/"
+	    href="http://jsfiddle.net/gh/get/library/pure/potherca/HowManySquaresDoYouSeePuzzle/tree/fiddles/HowManySquaresDoYouSee"
     	>Edit me on JsFiddle</a></div>
 	
 	<div class="banner banner-right"><a 
@@ -120,7 +120,7 @@
         document.title = oData.title;
 
         $.each(['js','css','html'], function(p_i, p_sName){
-            $.get('fiddle/demo.' + p_sName, function(p_sResponseData) {
+            $.get('demo.' + p_sName, function(p_sResponseData) {
                 sContent = sContent + '<input type="hidden" name="code_' + p_sName + '" value="' + base64Encode(p_sResponseData) + '" />';
                 
                 if(p_i === 2){                
