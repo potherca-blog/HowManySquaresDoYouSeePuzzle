@@ -4,7 +4,7 @@ There's a puzzle that's been circulating the web that shows you the image below
 and postulates the question "How many squares do you see?"
 
 <center>
-  <a href="http://blog.pother.ca/HowManySquaresDoYouSeePuzzle/fiddles/HowManySquaresDoYouSee/">
+  <a href="https://blog.pother.ca/HowManySquaresDoYouSeePuzzle/fiddles/HowManySquaresDoYouSee/">
     <img src="./fiddles/HowManySquaresDoYouSee/how-many-squares.png" alt="How Many Squares Do You See?" />
   </a>
 </center>
@@ -27,7 +27,7 @@ both the code on JsFiddle (so they can play with it online) and the git repo (so
 
 I hope you like it.
 
-[1]: http://diveintohtml5.info/canvas.html
-[2]: http://en.wiktionary.org/wiki/your_mileage_may_vary
-[3]: http://doc.jsfiddle.net/use/github_read.html
-[4]: http://blog.terrenceryan.com/github-ribbons-in-css/
+[1]: https://diveintohtml5.info/canvas.html
+[2]: https://en.wiktionary.org/wiki/your_mileage_may_vary
+[3]: https://doc.jsfiddle.net/use/github_read.html
+[4]: https://blog.terrenceryan.com/github-ribbons-in-css/
